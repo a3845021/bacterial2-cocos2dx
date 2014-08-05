@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<GameProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProjectDir>E:\cocos2dx\Bacterial2\builder\Bacterial2</ProjectDir>
+  <Version>1.5.0.1</Version>
+  <Resources>E:\cocos2dx\Bacterial2\builder\Bacterial2</Resources>
+  <Name>Bacterial2</Name>
+  <JsonFileName>Bacterial2.json</JsonFileName>
+  <CanvasSize>
+    <Width>480</Width>
+    <Height>320</Height>
+  </CanvasSize>
+  <filePath>E:\cocos2dx\Bacterial2\builder\Bacterial2\Bacterial2.xml.ccsproj</filePath>
+  <ProjectType>GameProject</ProjectType>
+  <ResRelativePath />
+  <ResProjFolder>E:\cocos2dx\Bacterial2\builder\Bacterial2\CocosStudio\ccsprojs</ResProjFolder>
+  <AssetsDir>E:\cocos2dx\Bacterial2\builder\Bacterial2\CocosStudio\assets</AssetsDir>
+  <LanaguageType>cpp</LanaguageType>
+</GameProject>
