@@ -19,7 +19,9 @@
   <imageFileList>
     <string>MainUI0.plist</string>
   </imageFileList>
-  <imagePngList />
+  <imagePngList>
+    <string>MainUI0.png</string>
+  </imagePngList>
   <JsonSuffix>.json</JsonSuffix>
-  <CurrentUIJson />
+  <CurrentUIJson>MainUI_1.json</CurrentUIJson>
 </UIProject>

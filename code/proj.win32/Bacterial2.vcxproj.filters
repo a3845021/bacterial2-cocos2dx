@@ -18,9 +18,10 @@
     <ClCompile Include="..\Classes\AppDelegate.cpp">
       <Filter>Classes</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\HelloWorldScene.cpp">
+    <ClCompile Include="..\Classes\MainScene.cpp">
       <Filter>Classes</Filter>
     </ClCompile>
+    <ClCompile Include="Bacterial.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -29,9 +30,10 @@
     <ClInclude Include="..\Classes\AppDelegate.h">
       <Filter>Classes</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\HelloWorldScene.h">
+    <ClInclude Include="..\Classes\MainScene.h">
       <Filter>Classes</Filter>
     </ClInclude>
+    <ClInclude Include="Bacterial.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="game.rc">
