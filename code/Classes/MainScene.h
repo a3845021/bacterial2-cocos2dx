@@ -2,6 +2,9 @@
 #define __HELLOWORLD_SCENE_H__
 
 #include "cocos2d.h"
+#include "Bacterial.h"
+
+USING_NS_CC;
 
 class MainScene : public cocos2d::Layer
 {
@@ -25,10 +28,10 @@ public:
 	bool generateBacterial(int type, int x, int y);
 	bool generateBacterial(int type, int x, int y, int level);
 private:
-	Array *_bacterialContainer;
-	Array *_bacterialList;
-	Array *_enemyList;
-	Array *_enemyContainer;
+	Vector<Vector<Bacterial>> *_bacterialContainer;
+	Vector<Bacterial> *_bacterialList;
+	Vector<Bacterial> *_enemyList;
+	Vector<Vector<Bacterial>> *_enemyContainer;
 	void putNewBacterial(int x, int y);
 };
 

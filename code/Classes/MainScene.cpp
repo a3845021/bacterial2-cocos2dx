@@ -53,7 +53,7 @@ bool MainScene::init()
 	
 	auto listener = EventListenerTouchOneByOne::create();  
 	listener->onTouchBegan = CC_CALLBACK_2(MainScene::onTouchBegan, this);
-	listener->setSwallowTouches(true);//不向下传递触摸  
+	listener->setSwallowTouches(true);
 	_eventDispatcher->addEventListenerWithSceneGraphPriority(listener,this);
     
     return true;
