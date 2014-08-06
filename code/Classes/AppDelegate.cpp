@@ -17,9 +17,9 @@ bool AppDelegate::applicationDidFinishLaunching() {
     auto glview = director->getOpenGLView();
     if(!glview) {
         glview = GLView::create("My Game");
+		glview->setFrameSize(640, 960);
         director->setOpenGLView(glview);
     }
-
     // turn on display FPS
     director->setDisplayStats(true);
 

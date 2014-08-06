@@ -1,4 +1,5 @@
 #include "HelloWorldScene.h"
+#include "editor-support/cocostudio/CocoStudio.h"
 
 USING_NS_CC;
 using namespace ui;
@@ -11,10 +12,10 @@ Scene* HelloWorld::createScene()
     
     // 'layer' is an autorelease object
     auto layer = HelloWorld::create();
-	CCNode *pNode = SceneReader::getInstance()->createNodeWithSceneFile("");
+	CCNode *pNode = SceneReader::getInstance()->createNodeWithSceneFile("publish/MainScene.json");
 
     // add layer as a child to scene
-    scene->addChild(layer);
+    scene->addChild(pNode);
 
     // return the scene
     return scene;

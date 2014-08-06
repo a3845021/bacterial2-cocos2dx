@@ -20,6 +20,7 @@
   E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\stdint.h \
   E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\sys/_types.h \
   E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\machine/_types.h \
+  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\sys/_wchar_limits.h \
   E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\limits.h \
   E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\sys/limits.h \
   E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\linux/limits.h \
@@ -70,8 +71,6 @@
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\initializer_list \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\tuple \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\cstring \
-  E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\cassert \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\assert.h \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\atomic \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\__undef_min_max \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\system_error \
@@ -114,6 +113,8 @@
   E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\alloca.h \
   E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\strings.h \
   E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\memory.h \
+  E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\cassert \
+  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\assert.h \
   jni/../../cocos2d/cocos/./base/CCVector.h \
   jni/../../cocos2d/cocos/./base/CCMap.h \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\unordered_map \
@@ -359,6 +360,8 @@ E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\sys/_types.h:
 
 E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\machine/_types.h:
 
+E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\sys/_wchar_limits.h:
+
 E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\limits.h:
 
 E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\sys/limits.h:
@@ -459,10 +462,6 @@ E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\tuple:
 
 E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\cstring:
 
-E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\cassert:
-
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\assert.h:
-
 E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\atomic:
 
 E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\__undef_min_max:
@@ -546,6 +545,10 @@ E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\alloca.h:
 E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\strings.h:
 
 E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\memory.h:
+
+E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\cassert:
+
+E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\assert.h:
 
 jni/../../cocos2d/cocos/./base/CCVector.h:
 

@@ -21,6 +21,7 @@
   E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\stdint.h \
   E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\sys/_types.h \
   E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\machine/_types.h \
+  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\sys/_wchar_limits.h \
   E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\limits.h \
   E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\sys/limits.h \
   E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\linux/limits.h \
@@ -71,8 +72,6 @@
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\initializer_list \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\tuple \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\cstring \
-  E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\cassert \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\assert.h \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\atomic \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\__undef_min_max \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\system_error \
@@ -115,6 +114,8 @@
   E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\alloca.h \
   E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\strings.h \
   E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\memory.h \
+  E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\cassert \
+  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\assert.h \
   jni/../../cocos2d/cocos/./base/CCVector.h \
   jni/../../cocos2d/cocos/./base/CCMap.h \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\unordered_map \
@@ -315,7 +316,65 @@
   jni/../../cocos2d/cocos/./deprecated/CCDouble.h \
   jni/../../cocos2d/cocos/./deprecated/CCBool.h \
   jni/../../cocos2d/cocos/./deprecated/CCNotificationCenter.h \
-  jni/../../cocos2d/cocos/./deprecated/CCDeprecated.h
+  jni/../../cocos2d/cocos/./deprecated/CCDeprecated.h \
+  jni/../../cocos2d/cocos/.\editor-support/cocostudio/CocoStudio.h \
+  jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCActionFrame.h \
+  jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCActionFrameEasing.h \
+  jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCActionManagerEx.h \
+  jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCActionObject.h \
+  jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCActionNode.h \
+  jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/DictionaryHelper.h \
+  jni/../../cocos2d/external/Box2D/..\json/document.h \
+  jni/../../cocos2d/external/Box2D/..\json/reader.h \
+  jni/../../cocos2d/external/Box2D/..\json/rapidjson.h \
+  jni/../../cocos2d/external/Box2D/..\json/internal/pow10.h \
+  jni/../../cocos2d/external/Box2D/..\json/internal/stack.h \
+  E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\csetjmp \
+  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\setjmp.h \
+  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\machine/setjmp.h \
+  jni/../../cocos2d/external/Box2D/..\json/internal/strfunc.h \
+  jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCArmature.h \
+  jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCArmatureDefine.h \
+  jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCBone.h \
+  jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCDatas.h \
+  jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCTween.h \
+  jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCProcessBase.h \
+  jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCDecorativeDisplay.h \
+  jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCDisplayFactory.h \
+  jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCColliderDetector.h \
+  jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCDisplayManager.h \
+  jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCBatchNode.h \
+  jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCArmatureAnimation.h \
+  jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCSpriteFrameCacheHelper.h \
+  jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCArmatureDataManager.h \
+  jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCSkin.h \
+  jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCDataReaderHelper.h \
+  jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCTransformHelp.h \
+  jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCUtilMath.h \
+  jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCComBase.h \
+  jni/../../cocos2d/cocos/.\base/ObjectFactory.h \
+  jni/../../cocos2d/cocos/.\editor-support/cocostudio/CocoLoader.h \
+  jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCComAttribute.h \
+  jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCComAudio.h \
+  jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCComController.h \
+  jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCInputDelegate.h \
+  jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCComRender.h \
+  jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCSGUIReader.h \
+  jni/../../cocos2d/cocos/.\ui/UIWidget.h \
+  jni/../../cocos2d/cocos/.\ui/CCProtectedNode.h \
+  jni/../../cocos2d/cocos/.\ui/UILayoutParameter.h \
+  jni/../../cocos2d/cocos/.\ui/GUIDefine.h \
+  jni/../../cocos2d/cocos/.\editor-support/cocostudio/WidgetReader/WidgetReaderProtocol.h \
+  jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCSSceneReader.h \
+  jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/TriggerBase.h \
+  jni/../../cocos2d/cocos/.\editor-support/cocostudio/TriggerObj.h \
+  jni/../../cocos2d/cocos/.\editor-support/cocostudio/TriggerMng.h \
+  jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/ActionTimeline/CCNodeReader.h \
+  jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/ActionTimeline/CCActionTimelineCache.h \
+  jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/ActionTimeline/CCTimelineMacro.h \
+  jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/ActionTimeline/CCFrame.h \
+  jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/ActionTimeline/CCTimeLine.h \
+  jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/ActionTimeline/CCActionTimeline.h
 
 jni/../../Classes/HelloWorldScene.h:
 
@@ -358,6 +417,8 @@ E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\stdint.h:
 E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\sys/_types.h:
 
 E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\machine/_types.h:
+
+E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\sys/_wchar_limits.h:
 
 E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\limits.h:
 
@@ -459,10 +520,6 @@ E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\tuple:
 
 E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\cstring:
 
-E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\cassert:
-
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\assert.h:
-
 E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\atomic:
 
 E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\__undef_min_max:
@@ -546,6 +603,10 @@ E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\alloca.h:
 E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\strings.h:
 
 E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\memory.h:
+
+E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\cassert:
+
+E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\assert.h:
 
 jni/../../cocos2d/cocos/./base/CCVector.h:
 
@@ -948,3 +1009,119 @@ jni/../../cocos2d/cocos/./deprecated/CCBool.h:
 jni/../../cocos2d/cocos/./deprecated/CCNotificationCenter.h:
 
 jni/../../cocos2d/cocos/./deprecated/CCDeprecated.h:
+
+jni/../../cocos2d/cocos/.\editor-support/cocostudio/CocoStudio.h:
+
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCActionFrame.h:
+
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCActionFrameEasing.h:
+
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCActionManagerEx.h:
+
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCActionObject.h:
+
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCActionNode.h:
+
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/DictionaryHelper.h:
+
+jni/../../cocos2d/external/Box2D/..\json/document.h:
+
+jni/../../cocos2d/external/Box2D/..\json/reader.h:
+
+jni/../../cocos2d/external/Box2D/..\json/rapidjson.h:
+
+jni/../../cocos2d/external/Box2D/..\json/internal/pow10.h:
+
+jni/../../cocos2d/external/Box2D/..\json/internal/stack.h:
+
+E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\csetjmp:
+
+E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\setjmp.h:
+
+E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\machine/setjmp.h:
+
+jni/../../cocos2d/external/Box2D/..\json/internal/strfunc.h:
+
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCArmature.h:
+
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCArmatureDefine.h:
+
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCBone.h:
+
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCDatas.h:
+
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCTween.h:
+
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCProcessBase.h:
+
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCDecorativeDisplay.h:
+
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCDisplayFactory.h:
+
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCColliderDetector.h:
+
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCDisplayManager.h:
+
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCBatchNode.h:
+
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCArmatureAnimation.h:
+
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCSpriteFrameCacheHelper.h:
+
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCArmatureDataManager.h:
+
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCSkin.h:
+
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCDataReaderHelper.h:
+
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCTransformHelp.h:
+
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCUtilMath.h:
+
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCComBase.h:
+
+jni/../../cocos2d/cocos/.\base/ObjectFactory.h:
+
+jni/../../cocos2d/cocos/.\editor-support/cocostudio/CocoLoader.h:
+
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCComAttribute.h:
+
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCComAudio.h:
+
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCComController.h:
+
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCInputDelegate.h:
+
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCComRender.h:
+
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCSGUIReader.h:
+
+jni/../../cocos2d/cocos/.\ui/UIWidget.h:
+
+jni/../../cocos2d/cocos/.\ui/CCProtectedNode.h:
+
+jni/../../cocos2d/cocos/.\ui/UILayoutParameter.h:
+
+jni/../../cocos2d/cocos/.\ui/GUIDefine.h:
+
+jni/../../cocos2d/cocos/.\editor-support/cocostudio/WidgetReader/WidgetReaderProtocol.h:
+
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/CCSSceneReader.h:
+
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/TriggerBase.h:
+
+jni/../../cocos2d/cocos/.\editor-support/cocostudio/TriggerObj.h:
+
+jni/../../cocos2d/cocos/.\editor-support/cocostudio/TriggerMng.h:
+
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/ActionTimeline/CCNodeReader.h:
+
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/ActionTimeline/CCActionTimelineCache.h:
+
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/ActionTimeline/CCTimelineMacro.h:
+
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/ActionTimeline/CCFrame.h:
+
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/ActionTimeline/CCTimeLine.h:
+
+jni/../../cocos2d/cocos/editor-support/cocosbuilder/..\cocostudio/ActionTimeline/CCActionTimeline.h:
