@@ -19,3 +19,4 @@
 *.exe
 *.out
 *.app
+/code/proj.win32/Debug.win32
