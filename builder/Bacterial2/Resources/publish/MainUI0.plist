@@ -23,6 +23,44 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
+			<key>resources/menu_pressed.png</key>
+			<dict>
+				<key>width</key>
+				<integer>122</integer>
+				<key>height</key>
+				<integer>122</integer>
+				<key>originalWidth</key>
+				<integer>122</integer>
+				<key>originalHeight</key>
+				<integer>122</integer>
+				<key>x</key>
+				<integer>124</integer>
+				<key>y</key>
+				<integer>0</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>resources/menu_disabled.png</key>
+			<dict>
+				<key>width</key>
+				<integer>122</integer>
+				<key>height</key>
+				<integer>122</integer>
+				<key>originalWidth</key>
+				<integer>122</integer>
+				<key>originalHeight</key>
+				<integer>122</integer>
+				<key>x</key>
+				<integer>248</integer>
+				<key>y</key>
+				<integer>0</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
 		</dict>
 		<key>metadata</key>
 		<dict>

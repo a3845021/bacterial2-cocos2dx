@@ -12,9 +12,7 @@
   "textures": [
     "MainUI0.plist"
   ],
-  "texturesPng": [
-    "MainUI0.png"
-  ],
+  "texturesPng": [],
   "version": "1.5.0.1",
   "widgetTree": {
     "classname": "Panel",
@@ -54,7 +52,7 @@
           "sizeType": 0,
           "tag": 7,
           "touchAble": true,
-          "useMergedTexture": true,
+          "useMergedTexture": false,
           "visible": true,
           "width": 122,
           "x": 562,
@@ -65,9 +63,9 @@
           "capInsetsY": 0,
           "disabled": null,
           "disabledData": {
-            "path": "resources/menu_disabled.png",
+            "path": "resources/menu_normal.png",
             "plistFile": "",
-            "resourceType": 1
+            "resourceType": 0
           },
           "fontName": "微软雅黑",
           "fontSize": 14,
@@ -76,13 +74,13 @@
           "normalData": {
             "path": "resources/menu_normal.png",
             "plistFile": "",
-            "resourceType": 1
+            "resourceType": 0
           },
           "pressed": null,
           "pressedData": {
-            "path": "resources/menu_pressed.png",
+            "path": "resources/menu_normal.png",
             "plistFile": "",
-            "resourceType": 1
+            "resourceType": 0
           },
           "scale9Enable": false,
           "scale9Height": 122,
@@ -124,7 +122,7 @@
       "sizeType": 0,
       "tag": 1,
       "touchAble": true,
-      "useMergedTexture": true,
+      "useMergedTexture": false,
       "visible": true,
       "width": 640,
       "x": 0,

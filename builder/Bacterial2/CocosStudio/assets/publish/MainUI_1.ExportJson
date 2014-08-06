@@ -65,7 +65,7 @@
           "capInsetsY": 0,
           "disabled": null,
           "disabledData": {
-            "path": "resources/menu_normal.png",
+            "path": "resources/menu_disabled.png",
             "plistFile": "",
             "resourceType": 1
           },
@@ -80,7 +80,7 @@
           },
           "pressed": null,
           "pressedData": {
-            "path": "resources/menu_normal.png",
+            "path": "resources/menu_pressed.png",
             "plistFile": "",
             "resourceType": 1
           },
