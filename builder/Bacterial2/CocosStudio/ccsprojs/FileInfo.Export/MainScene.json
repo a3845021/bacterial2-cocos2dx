@@ -1,6 +1,7 @@
 [
   "resources/scene_bg.png",
   "publish/MainUI0.png",
+  "res/scene_bg.png",
   "publish\\MainScene.json",
   "E:\\cocos2dx\\Bacterial2\\builder\\Bacterial2\\CocosStudio\\assets\\publish\\MainUI0.plist",
   "publish/MainUI_1.ExportJson"

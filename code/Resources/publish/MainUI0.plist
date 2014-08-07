@@ -4,7 +4,7 @@
 	<dict>
 		<key>frames</key>
 		<dict>
-			<key>resources/menu_normal.png</key>
+			<key>res/menu_normal.png</key>
 			<dict>
 				<key>width</key>
 				<integer>122</integer>
@@ -23,7 +23,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>resources/menu_pressed.png</key>
+			<key>res/menu_pressed.png</key>
 			<dict>
 				<key>width</key>
 				<integer>122</integer>
@@ -42,7 +42,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>resources/menu_disabled.png</key>
+			<key>res/menu_disabled.png</key>
 			<dict>
 				<key>width</key>
 				<integer>122</integer>

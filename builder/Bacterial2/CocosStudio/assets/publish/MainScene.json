@@ -16,7 +16,7 @@
       "classname": "CCNode",
       "name": null,
       "canedit": true,
-      "objecttag": 10003,
+      "objecttag": 10007,
       "rotation": 0,
       "scalex": 1,
       "scaley": 1,
@@ -32,7 +32,7 @@
           "name": "CCSprite",
           "file": null,
           "fileData": {
-            "path": "resources/scene_bg.png",
+            "path": "res/scene_bg.png",
             "plistFile": "",
             "resourceType": 0
           }
@@ -44,13 +44,13 @@
       "classname": "CCNode",
       "name": null,
       "canedit": true,
-      "objecttag": 10006,
+      "objecttag": 10008,
       "rotation": 0,
       "scalex": 1,
       "scaley": 1,
       "visible": 1,
-      "x": 0,
-      "y": 750.00018310546875,
+      "x": 6.103515625E-05,
+      "y": 750.00048828125,
       "zorder": 1,
       "gameobjects": [],
       "components": [

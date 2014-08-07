@@ -44,7 +44,7 @@
           "layoutParameter": null,
           "opacity": 255,
           "positionPercentX": 0.878125,
-          "positionPercentY": 0.382499963,
+          "positionPercentY": 0.38,
           "positionType": 0,
           "rotation": 0,
           "scaleX": 1,
@@ -65,7 +65,7 @@
           "capInsetsY": 0,
           "disabled": null,
           "disabledData": {
-            "path": "resources/menu_disabled.png",
+            "path": "res/menu_disabled.png",
             "plistFile": "",
             "resourceType": 0
           },
@@ -74,13 +74,13 @@
           "fontType": 0,
           "normal": null,
           "normalData": {
-            "path": "resources/menu_normal.png",
+            "path": "res/menu_normal.png",
             "plistFile": "",
             "resourceType": 0
           },
           "pressed": null,
           "pressedData": {
-            "path": "resources/menu_pressed.png",
+            "path": "res/menu_pressed.png",
             "plistFile": "",
             "resourceType": 0
           },
