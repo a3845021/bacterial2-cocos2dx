@@ -1,5 +1,7 @@
 #include "MainScene.h"
-#include "editor-support/cocostudio/CocoStudio.h"
+#include "editor-support\cocostudio\CocoStudio.h"
+#include "ui\CocosGUI.h"
+#include "ui\UIWidget.h"
 
 USING_NS_CC;
 using namespace ui;
@@ -49,6 +51,11 @@ bool MainScene::init()
 	*/
 	
 	auto pNode = SceneReader::getInstance()->createNodeWithSceneFile("publish/MainScene.json");
+	auto pUI = pNode->getChildByTag(10004);
+	auto pPanel = pUI->getChildByName("panel");
+	Button *pBtnMenu = (Button *)pPanel->getChildByName("btnMenu");
+	pBtnMenu->addTouchEventListener(Widget::ccWidgetTouchCallback(CC_CALLBACK_2(MainScene::onBtnMenuTouchEnded, this)));
+
 	addChild(pNode);
 	
 	auto listener = EventListenerTouchOneByOne::create();  
@@ -59,7 +66,17 @@ bool MainScene::init()
     return true;
 }
 
-bool MainScene::onTouchBegan(cocos2d::Touch *touch, cocos2d::Event *event)
+void MainScene::onBtnMenuTouchEnded(Ref *ref, Widget::TouchEventType type)
+{
+	switch(type)
+	{
+	case TouchEventType::TOUCH_EVENT_ENDED:
+		CCLog("%s", "btnMenu touched!");
+		break;
+	}
+}
+
+bool MainScene::onTouchBegan(Touch *touch, Event *event)
 {
 	Vec2 p = touch->getLocation();
 	

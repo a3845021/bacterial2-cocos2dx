@@ -3,8 +3,10 @@
 
 #include "cocos2d.h"
 #include "Bacterial.h"
+#include "ui\CocosGUI.h"
 
 USING_NS_CC;
+using namespace ui;
 
 class MainScene : public cocos2d::Layer
 {
@@ -19,6 +21,7 @@ public:
     void menuCloseCallback(cocos2d::Ref* pSender);
 
 	virtual bool onTouchBegan(cocos2d::Touch *touch, cocos2d::Event *event);
+	void onBtnMenuTouchEnded(Ref *ref, Widget::TouchEventType type);
     
     // implement the "static create()" method manually
     CREATE_FUNC(MainScene);

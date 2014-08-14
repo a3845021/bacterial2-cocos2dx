@@ -21,7 +21,9 @@
     <ClCompile Include="..\Classes\MainScene.cpp">
       <Filter>Classes</Filter>
     </ClCompile>
-    <ClCompile Include="Bacterial.cpp" />
+    <ClCompile Include="..\Classes\Bacterial.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -33,7 +35,9 @@
     <ClInclude Include="..\Classes\MainScene.h">
       <Filter>Classes</Filter>
     </ClInclude>
-    <ClInclude Include="Bacterial.h" />
+    <ClInclude Include="..\Classes\Bacterial.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="game.rc">
