@@ -1,7 +1,7 @@
 #include "MainScene.h"
-#include "editor-support\cocostudio\CocoStudio.h"
-#include "ui\CocosGUI.h"
-#include "ui\UIWidget.h"
+#include "editor-support/cocostudio/CocoStudio.h"
+#include "ui/CocosGUI.h"
+#include "ui/UIWidget.h"
 
 USING_NS_CC;
 using namespace ui;
