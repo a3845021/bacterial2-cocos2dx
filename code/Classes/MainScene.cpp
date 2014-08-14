@@ -70,7 +70,7 @@ void MainScene::onBtnMenuTouchEnded(Ref *ref, Widget::TouchEventType type)
 {
 	switch(type)
 	{
-	case TouchEventType::TOUCH_EVENT_ENDED:
+	case Widget::TouchEventType::ENDED:
 		CCLog("%s", "btnMenu touched!");
 		break;
 	}

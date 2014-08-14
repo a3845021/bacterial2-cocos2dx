@@ -7,54 +7,54 @@
   jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCRef.h \
   jni/../../cocos2d/cocos/editor-support/cocostudio/../..\base/CCPlatformMacros.h \
   jni/../../cocos2d/cocos/./platform/android\CCPlatformDefine.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\android/log.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\android/log.h \
   jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCRefPtr.h \
   jni/../../cocos2d/cocos/editor-support/cocostudio/../..\base/ccMacros.h \
   jni/../../cocos2d/cocos/editor-support/cocostudio/../..\base/CCConsole.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\sys/select.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\sys/cdefs.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\sys/cdefs_elf.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\android/api-level.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\sys/time.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\sys/types.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\sys/select.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\sys/cdefs.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\sys/cdefs_elf.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\android/api-level.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\sys/time.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\sys/types.h \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include\stdint.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\stdint.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\sys/_types.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\machine/_types.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\sys/_wchar_limits.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\limits.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\sys/limits.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\linux/limits.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\machine/internal_types.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\machine/limits.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\sys/syslimits.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\asm/page.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\linux/posix_types.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\linux/stddef.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\linux/compiler.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\asm/posix_types.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\asm/types.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\linux/types.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\machine/kernel.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\sys/sysmacros.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\linux/time.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\signal.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\stdint.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\sys/_types.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\machine/_types.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\sys/_wchar_limits.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\limits.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\sys/limits.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\linux/limits.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\machine/internal_types.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\machine/limits.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\sys/syslimits.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\asm/page.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\linux/posix_types.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\linux/stddef.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\linux/compiler.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\asm/posix_types.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\asm/types.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\linux/types.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\machine/kernel.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\sys/sysmacros.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\linux/time.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\signal.h \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include\string.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\string.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\malloc.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\string.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\malloc.h \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include\monetary.h \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include\xlocale.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\asm/signal.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\asm-generic/signal.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\asm/sigcontext.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\asm/siginfo.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\asm-generic/siginfo.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\asm/signal.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\asm-generic/signal.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\asm/sigcontext.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\asm/siginfo.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\asm-generic/siginfo.h \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\thread \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\__config \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\iosfwd \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include\wchar.h \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include\stdio.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\stdio.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\stdio.h \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include\wctype.h \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\__functional_base \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\type_traits \
@@ -77,21 +77,21 @@
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\system_error \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\cerrno \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include\errno.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\errno.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\linux/errno.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\asm/errno.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\asm-generic/errno.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\asm-generic/errno-base.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\errno.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\linux/errno.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\asm/errno.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\asm-generic/errno.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\asm-generic/errno-base.h \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\stdexcept \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\chrono \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\ctime \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include\time.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\time.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\time.h \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\ratio \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\climits \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\__mutex_base \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\pthread.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\sched.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\pthread.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\sched.h \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\vector \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\__bit_reference \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\algorithm \
@@ -104,18 +104,18 @@
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\cwctype \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\cctype \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include\ctype.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\ctype.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\ctype.h \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\mutex \
   jni/../../cocos2d/cocos/./platform/android\CCStdC.h \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include\math.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\math.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\math.h \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include\stdlib.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\stdlib.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\alloca.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\strings.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\memory.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\stdlib.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\alloca.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\strings.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\memory.h \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\cassert \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\assert.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\assert.h \
   jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCVector.h \
   jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCMap.h \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\unordered_map \
@@ -142,10 +142,10 @@
   jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCValue.h \
   jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/ccTypes.h \
   jni/../../cocos2d/cocos/./platform/android\CCGL.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\GLES2/gl2platform.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\KHR/khrplatform.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\GLES2/gl2.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\GLES2/gl2ext.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\GLES2/gl2platform.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\KHR/khrplatform.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\GLES2/gl2.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\GLES2/gl2ext.h \
   jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCConfiguration.h \
   jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCDirector.h \
   jni/../../cocos2d/cocos/editor-support/cocostudio/../..\2d/CCLabelAtlas.h \
@@ -172,13 +172,13 @@
   jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCScheduler.h \
   jni/../../cocos2d/cocos/editor-support/cocostudio/../..\base/uthash.h \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include\inttypes.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\inttypes.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\inttypes.h \
   jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/base64.h \
   jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/ZipUtils.h \
   jni/../../cocos2d/cocos/editor-support/cocostudio/../..\platform/android/CCFileUtilsAndroid.h \
   jni/../../cocos2d/cocos/editor-support/cocostudio/../..\platform/CCFileUtils.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\jni.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\android/asset_manager.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\jni.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\android/asset_manager.h \
   jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCProfiling.h \
   jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/ccUTF8.h \
   jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCUserDefault.h \
@@ -254,7 +254,7 @@
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\ios \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\__locale \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include\locale.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\locale.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\locale.h \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\streambuf \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\locale \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\cstdarg \
@@ -330,8 +330,8 @@
   jni/../../cocos2d/cocos/editor-support/cocostudio/../../../external\json/internal/pow10.h \
   jni/../../cocos2d/cocos/editor-support/cocostudio/../../../external\json/internal/stack.h \
   E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\csetjmp \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\setjmp.h \
-  E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\machine/setjmp.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\setjmp.h \
+  E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\machine/setjmp.h \
   jni/../../cocos2d/cocos/editor-support/cocostudio/../../../external\json/internal/strfunc.h \
   jni/../../cocos2d/cocos/editor-support/cocostudio/..\cocostudio/CCArmature.h \
   jni/../../cocos2d/cocos/editor-support/cocostudio/..\cocostudio/CCArmatureDefine.h \
@@ -393,7 +393,7 @@ jni/../../cocos2d/cocos/editor-support/cocostudio/../..\base/CCPlatformMacros.h:
 
 jni/../../cocos2d/cocos/./platform/android\CCPlatformDefine.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\android/log.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\android/log.h:
 
 jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCRefPtr.h:
 
@@ -401,81 +401,81 @@ jni/../../cocos2d/cocos/editor-support/cocostudio/../..\base/ccMacros.h:
 
 jni/../../cocos2d/cocos/editor-support/cocostudio/../..\base/CCConsole.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\sys/select.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\sys/select.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\sys/cdefs.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\sys/cdefs.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\sys/cdefs_elf.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\sys/cdefs_elf.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\android/api-level.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\android/api-level.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\sys/time.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\sys/time.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\sys/types.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\sys/types.h:
 
 E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include\stdint.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\stdint.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\stdint.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\sys/_types.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\sys/_types.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\machine/_types.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\machine/_types.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\sys/_wchar_limits.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\sys/_wchar_limits.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\limits.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\limits.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\sys/limits.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\sys/limits.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\linux/limits.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\linux/limits.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\machine/internal_types.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\machine/internal_types.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\machine/limits.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\machine/limits.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\sys/syslimits.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\sys/syslimits.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\asm/page.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\asm/page.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\linux/posix_types.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\linux/posix_types.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\linux/stddef.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\linux/stddef.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\linux/compiler.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\linux/compiler.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\asm/posix_types.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\asm/posix_types.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\asm/types.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\asm/types.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\linux/types.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\linux/types.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\machine/kernel.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\machine/kernel.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\sys/sysmacros.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\sys/sysmacros.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\linux/time.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\linux/time.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\signal.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\signal.h:
 
 E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include\string.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\string.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\string.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\malloc.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\malloc.h:
 
 E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include\monetary.h:
 
 E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include\xlocale.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\asm/signal.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\asm/signal.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\asm-generic/signal.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\asm-generic/signal.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\asm/sigcontext.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\asm/sigcontext.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\asm/siginfo.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\asm/siginfo.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\asm-generic/siginfo.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\asm-generic/siginfo.h:
 
 E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\thread:
 
@@ -487,7 +487,7 @@ E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include\wch
 
 E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include\stdio.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\stdio.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\stdio.h:
 
 E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include\wctype.h:
 
@@ -533,15 +533,15 @@ E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\cerrno:
 
 E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include\errno.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\errno.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\errno.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\linux/errno.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\linux/errno.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\asm/errno.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\asm/errno.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\asm-generic/errno.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\asm-generic/errno.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\asm-generic/errno-base.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\asm-generic/errno-base.h:
 
 E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\stdexcept:
 
@@ -551,7 +551,7 @@ E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\ctime:
 
 E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include\time.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\time.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\time.h:
 
 E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\ratio:
 
@@ -559,9 +559,9 @@ E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\climits:
 
 E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\__mutex_base:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\pthread.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\pthread.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\sched.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\sched.h:
 
 E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\vector:
 
@@ -587,7 +587,7 @@ E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\cctype:
 
 E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include\ctype.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\ctype.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\ctype.h:
 
 E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\mutex:
 
@@ -595,21 +595,21 @@ jni/../../cocos2d/cocos/./platform/android\CCStdC.h:
 
 E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include\math.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\math.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\math.h:
 
 E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include\stdlib.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\stdlib.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\stdlib.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\alloca.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\alloca.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\strings.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\strings.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\memory.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\memory.h:
 
 E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\cassert:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\assert.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\assert.h:
 
 jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCVector.h:
 
@@ -663,13 +663,13 @@ jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/ccTypes.h:
 
 jni/../../cocos2d/cocos/./platform/android\CCGL.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\GLES2/gl2platform.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\GLES2/gl2platform.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\KHR/khrplatform.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\KHR/khrplatform.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\GLES2/gl2.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\GLES2/gl2.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\GLES2/gl2ext.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\GLES2/gl2ext.h:
 
 jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCConfiguration.h:
 
@@ -723,7 +723,7 @@ jni/../../cocos2d/cocos/editor-support/cocostudio/../..\base/uthash.h:
 
 E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include\inttypes.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\inttypes.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\inttypes.h:
 
 jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/base64.h:
 
@@ -733,9 +733,9 @@ jni/../../cocos2d/cocos/editor-support/cocostudio/../..\platform/android/CCFileU
 
 jni/../../cocos2d/cocos/editor-support/cocostudio/../..\platform/CCFileUtils.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\jni.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\jni.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\android/asset_manager.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\android/asset_manager.h:
 
 jni/../../cocos2d/cocos/editor-support/cocostudio/../../base/CCProfiling.h:
 
@@ -887,7 +887,7 @@ E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\__locale:
 
 E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/../../android/support/include\locale.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\locale.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\locale.h:
 
 E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\streambuf:
 
@@ -1039,9 +1039,9 @@ jni/../../cocos2d/cocos/editor-support/cocostudio/../../../external\json/interna
 
 E:/android-ndk-r9d/sources/cxx-stl/llvm-libc++/libcxx/include\csetjmp:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\setjmp.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\setjmp.h:
 
-E:/android-ndk-r9d/platforms/android-18/arch-arm/usr/include\machine/setjmp.h:
+E:/android-ndk-r9d/platforms/android-19/arch-arm/usr/include\machine/setjmp.h:
 
 jni/../../cocos2d/cocos/editor-support/cocostudio/../../../external\json/internal/strfunc.h:
 

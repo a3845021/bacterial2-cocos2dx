@@ -32,7 +32,7 @@
           "name": "CCSprite",
           "file": null,
           "fileData": {
-            "path": "resources/scene_bg.png",
+            "path": "res/scene_bg.png",
             "plistFile": "",
             "resourceType": 0
           }
@@ -42,22 +42,22 @@
     {
       "__type": "ComGameObjectSurrogate:#EditorCommon.JsonModel",
       "classname": "CCNode",
-      "name": null,
+      "name": "",
       "canedit": true,
-      "objecttag": 10006,
+      "objecttag": 10004,
       "rotation": 0,
       "scalex": 1,
       "scaley": 1,
       "visible": 1,
       "x": 0,
-      "y": 0,
+      "y": 750,
       "zorder": 1,
       "gameobjects": [],
       "components": [
         {
           "__type": "ComGUIAdapterSurrogate:#EditorCommon.JsonModel.Component",
           "classname": "GUIComponent",
-          "name": "GUIComponent",
+          "name": "controlPanel",
           "file": null,
           "fileData": {
             "path": "publish/MainUI_1.ExportJson",
