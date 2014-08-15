@@ -4,7 +4,7 @@
 #include "cocos2d.h"
 #include "Bacterial.h"
 #include "CocosPtr.h"
-#include "ui\CocosGUI.h"
+#include "ui/CocosGUI.h"
 
 USING_NS_CC;
 using namespace ui;
