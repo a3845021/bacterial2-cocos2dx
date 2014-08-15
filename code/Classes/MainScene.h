@@ -3,6 +3,7 @@
 
 #include "cocos2d.h"
 #include "Bacterial.h"
+#include "CocosPtr.h"
 #include "ui\CocosGUI.h"
 
 USING_NS_CC;
@@ -17,8 +18,7 @@ public:
     // Here's a difference. Method 'init' in cocos2d-x returns bool, instead of returning 'id' in cocos2d-iphone
     virtual bool init();  
     
-    // a selector callback
-    void menuCloseCallback(cocos2d::Ref* pSender);
+	virtual void onEnter();
 
 	virtual bool onTouchBegan(cocos2d::Touch *touch, cocos2d::Event *event);
 	void onBtnMenuTouchEnded(Ref *ref, Widget::TouchEventType type);
@@ -30,11 +30,16 @@ public:
 	bool generateBacterial(int type, int level);
 	bool generateBacterial(int type, int x, int y);
 	bool generateBacterial(int type, int x, int y, int level);
+
+	void saveGame();
+	bool loadGame();
 private:
-	Vector<Vector<Bacterial>> *_bacterialContainer;
-	Vector<Bacterial> *_bacterialList;
-	Vector<Bacterial> *_enemyList;
-	Vector<Vector<Bacterial>> *_enemyContainer;
+	std::vector<std::vector<CocosPtr<Bacterial *> *> *> *_bacterialContainer;
+	Vector<Bacterial *> *_bacterialList;
+	Vector<Bacterial *> *_enemyList;
+	std::vector<std::vector<bool> *> *_enemyContainer;
+
+	void prepareStage();
 	void putNewBacterial(int x, int y);
 };
 

@@ -2,6 +2,7 @@
 #include "editor-support\cocostudio\CocoStudio.h"
 #include "ui\CocosGUI.h"
 #include "ui\UIWidget.h"
+#include "define.h"
 
 USING_NS_CC;
 using namespace ui;
@@ -66,12 +67,40 @@ bool MainScene::init()
     return true;
 }
 
+void MainScene::onEnter()
+{
+	Layer::onEnter();
+	prepareStage();
+}
+
+void MainScene::prepareStage()
+{
+	int capacityX = 5;
+	int capacityY = 6;
+
+	_bacterialContainer = new std::vector<std::vector<CocosPtr<Bacterial *> *> *>(capacityX);
+	_enemyContainer = new std::vector<std::vector<bool> *>(capacityX);
+
+	for(int i = 0; i < capacityX; i++)
+	{
+		auto tmp = new std::vector<CocosPtr<Bacterial *> *>(capacityY);
+		auto tmp1 = new std::vector<bool>(capacityY);
+		for(int j = 0; j < capacityY; j++)
+		{
+			tmp1->push_back(true);
+			//tmp->pushBack(new Value(NULL));
+		}
+		_bacterialContainer->push_back(tmp);
+		_enemyContainer->push_back(tmp1);
+	}
+}
+
 void MainScene::onBtnMenuTouchEnded(Ref *ref, Widget::TouchEventType type)
 {
 	switch(type)
 	{
 	case Widget::TouchEventType::ENDED:
-		CCLog("%s", "btnMenu touched!");
+		log("%s", "btnMenu touched!");
 		break;
 	}
 }
@@ -109,5 +138,31 @@ bool MainScene::generateBacterial(int type, int level)
 
 	}
 
+	return false;
+}
+
+bool MainScene::generateBacterial(int type, int x, int y)
+{
+	return generateBacterial(type, x, y, 1);
+}
+
+bool MainScene::generateBacterial(int type, int x, int y, int level)
+{
+	if(type == 0 || type == 1)
+	{
+		level = std::max(1, std::min(MAXLEVEL, level));
+		std::vector<CocosPtr<Bacterial *> *> *tmp = _bacterialContainer->at(x);
+		
+	}
+	return false;
+}
+
+void MainScene::saveGame()
+{
+
+}
+
+bool MainScene::loadGame()
+{
 	return false;
 }
