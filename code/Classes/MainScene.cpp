@@ -78,17 +78,17 @@ void MainScene::prepareStage()
 	int capacityX = 5;
 	int capacityY = 6;
 
-	_bacterialContainer = new std::vector<std::vector<CocosPtr<Bacterial *> *> *>(capacityX);
+	_bacterialContainer = new std::vector<std::vector<CocosPtr<Bacterial> *> *>(capacityX);
 	_enemyContainer = new std::vector<std::vector<bool> *>(capacityX);
 
 	for(int i = 0; i < capacityX; i++)
 	{
-		auto tmp = new std::vector<CocosPtr<Bacterial *> *>(capacityY);
+		auto tmp = new std::vector<CocosPtr<Bacterial> *>(capacityY);
 		auto tmp1 = new std::vector<bool>(capacityY);
 		for(int j = 0; j < capacityY; j++)
 		{
+			tmp->push_back(new CocosPtr<Bacterial>(new Bacterial()));
 			tmp1->push_back(true);
-			//tmp->pushBack(new Value(NULL));
 		}
 		_bacterialContainer->push_back(tmp);
 		_enemyContainer->push_back(tmp1);
@@ -151,7 +151,7 @@ bool MainScene::generateBacterial(int type, int x, int y, int level)
 	if(type == 0 || type == 1)
 	{
 		level = std::max(1, std::min(MAXLEVEL, level));
-		std::vector<CocosPtr<Bacterial *> *> *tmp = _bacterialContainer->at(x);
+		std::vector<CocosPtr<Bacterial> *> *tmp = _bacterialContainer->at(x);
 		
 	}
 	return false;

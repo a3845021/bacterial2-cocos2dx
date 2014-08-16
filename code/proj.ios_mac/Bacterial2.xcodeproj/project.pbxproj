@@ -253,6 +253,8 @@
 		50EF629517ECD46A001EB2F8 /* Icon-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-100.png"; sourceTree = "<group>"; };
 		50EF62A017ECD613001EB2F8 /* Icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-29.png"; sourceTree = "<group>"; };
 		50EF62A117ECD613001EB2F8 /* Icon-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-50.png"; sourceTree = "<group>"; };
+		BEA0FB0E199F9ECB007F0197 /* CocosPtr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CocosPtr.h; path = ../Classes/CocosPtr.h; sourceTree = "<group>"; };
+		BEA0FB0F199F9ECB007F0197 /* define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = define.h; path = ../Classes/define.h; sourceTree = "<group>"; };
 		BEEC9C671992694800737CC4 /* MainScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MainScene.cpp; path = ../Classes/MainScene.cpp; sourceTree = "<group>"; };
 		BEEC9C681992694800737CC4 /* MainScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainScene.h; path = ../Classes/MainScene.h; sourceTree = "<group>"; };
 		BEEC9C6B1992701500737CC4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "Bacterial2 iOS/Images.xcassets"; sourceTree = SOURCE_ROOT; };
@@ -337,6 +339,8 @@
 		15AA9C4015B7EC450033D6C2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				BEA0FB0E199F9ECB007F0197 /* CocosPtr.h */,
+				BEA0FB0F199F9ECB007F0197 /* define.h */,
 				BEEC9CAD19927B0D00737CC4 /* Bacterial.cpp */,
 				BEEC9CAE19927B0D00737CC4 /* Bacterial.h */,
 				BEEC9C671992694800737CC4 /* MainScene.cpp */,

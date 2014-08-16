@@ -34,7 +34,7 @@ public:
 	void saveGame();
 	bool loadGame();
 private:
-	std::vector<std::vector<CocosPtr<Bacterial *> *> *> *_bacterialContainer;
+	std::vector<std::vector<CocosPtr<Bacterial> *> *> *_bacterialContainer;
 	Vector<Bacterial *> *_bacterialList;
 	Vector<Bacterial *> *_enemyList;
 	std::vector<std::vector<bool> *> *_enemyContainer;

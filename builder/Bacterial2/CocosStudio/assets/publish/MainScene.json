@@ -42,6 +42,34 @@
     {
       "__type": "ComGameObjectSurrogate:#EditorCommon.JsonModel",
       "classname": "CCNode",
+      "name": null,
+      "canedit": true,
+      "objecttag": 10005,
+      "rotation": 0,
+      "scalex": 1,
+      "scaley": 1,
+      "visible": 1,
+      "x": 0,
+      "y": 0,
+      "zorder": 1,
+      "gameobjects": [],
+      "components": [
+        {
+          "__type": "ComSpriteSurrogate:#EditorCommon.JsonModel.Component",
+          "classname": "CCSprite",
+          "name": "container",
+          "file": null,
+          "fileData": {
+            "path": "",
+            "plistFile": "",
+            "resourceType": 0
+          }
+        }
+      ]
+    },
+    {
+      "__type": "ComGameObjectSurrogate:#EditorCommon.JsonModel",
+      "classname": "CCNode",
       "name": "",
       "canedit": true,
       "objecttag": 10004,
@@ -73,7 +101,7 @@
     "_width": 640
   },
   "Triggers": null,
-  "Version": "1.5.0.1",
+  "Version": "1.6.0.0",
   "components": [
     {
       "__type": "ComSceneSurrogate:#EditorCommon.JsonModel.Component",
