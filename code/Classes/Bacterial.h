@@ -11,16 +11,6 @@ public:
 	Bacterial(void);
 	~Bacterial(void);
     
-    static string encode(Bacterial *)
-    {
-        return NULL;
-    }
-    
-    static Bacterial * decode(string s)
-    {
-        return NULL;
-    }
-    
     void setLevel(int value);
     int getLevel();
     void setType(int value);
@@ -34,8 +24,8 @@ public:
     int positionY;
     float nextEvolution;
     float nextEvolutionCurrent;
-    bool inited = false;
-    bool checked = false;
+    bool inited;
+    bool checked;
 private:
 	int level;
     int type;

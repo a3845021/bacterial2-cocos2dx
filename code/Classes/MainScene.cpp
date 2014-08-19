@@ -1,4 +1,7 @@
 #include "MainScene.h"
+#include "json/document.h"
+#include "json/writer.h"
+#include "json/stringbuffer.h"
 #include "editor-support/cocostudio/CocoStudio.h"
 #include "ui/CocosGUI.h"
 #include "ui/UIWidget.h"
@@ -7,6 +10,7 @@
 USING_NS_CC;
 using namespace ui;
 using namespace cocostudio;
+using namespace rapidjson;
 
 Scene* MainScene::createScene()
 {
@@ -50,6 +54,10 @@ bool MainScene::init()
 	closeItem->setPosition(Vec2(origin.x + visibleSize.width - closeItem->getContentSize().width/2 ,
                                 origin.y + closeItem->getContentSize().height/2));
 	*/
+
+	_maxLevel = 0;
+	_enemyGenerateTime = 0;
+	_runningTime = 0;
 	
 	auto pNode = SceneReader::getInstance()->createNodeWithSceneFile("publish/MainScene.json");
 	auto pUI = pNode->getChildByTag(10004);
@@ -73,6 +81,12 @@ void MainScene::onEnter()
 	prepareStage();
 }
 
+void MainScene::onExit()
+{
+	Layer::onExit();
+	saveGame();
+}
+
 void MainScene::prepareStage()
 {
 	int capacityX = 5;
@@ -80,6 +94,8 @@ void MainScene::prepareStage()
 
 	_bacterialContainer = new std::vector<std::vector<CocosPtr<Bacterial> *> *>(capacityX);
 	_enemyContainer = new std::vector<std::vector<bool> *>(capacityX);
+	_bacterialList = new Vector<Bacterial *>();
+	_enemyList = new Vector<Bacterial *>();
 
 	for(int i = 0; i < capacityX; i++)
 	{
@@ -93,6 +109,26 @@ void MainScene::prepareStage()
 		_bacterialContainer->push_back(tmp);
 		_enemyContainer->push_back(tmp1);
 	}
+
+	if(loadGame())
+	{
+		for(auto b : *_bacterialList)
+		{
+			if(b->getType() == 1)
+			{
+				_enemyList->pushBack(b);
+			}
+			b->setAnchorPoint(ccp(0.5f, 0.5f));
+/*
+			CocosPtr<Bacterial> *ptr = _bacterialContainer->at(b->positionX)->at(b->positionY);
+			delete ptr;
+			ptr = NULL;
+*/
+			std::vector<CocosPtr<Bacterial> *>::iterator it = _bacterialContainer->at(b->positionX)->begin() + b->positionY;
+			_bacterialContainer->at(b->positionX)->erase(it);
+			_bacterialContainer->at(b->positionX)->insert(it, new CocosPtr<Bacterial>(b));
+		}
+	}
 }
 
 void MainScene::onBtnMenuTouchEnded(Ref *ref, Widget::TouchEventType type)
@@ -101,6 +137,7 @@ void MainScene::onBtnMenuTouchEnded(Ref *ref, Widget::TouchEventType type)
 	{
 	case Widget::TouchEventType::ENDED:
 		log("%s", "btnMenu touched!");
+		saveGame();
 		break;
 	}
 }
@@ -157,12 +194,94 @@ bool MainScene::generateBacterial(int type, int x, int y, int level)
 	return false;
 }
 
+void MainScene::archivedDataWithVector(string &s, cocos2d::Vector<Bacterial *> list)
+{
+	Document doc;
+	Document::AllocatorType &allocator = doc.GetAllocator();
+	
+	doc.SetArray();
+	for(auto b : list)
+	{
+		rapidjson::Value object(kObjectType);
+		object.AddMember("level", b->getLevel(), allocator);
+		object.AddMember("type", b->getType(), allocator);
+		object.AddMember("positionX", b->positionX, allocator);
+		object.AddMember("positionY", b->positionY, allocator);
+		object.AddMember("nextEvolution", b->nextEvolution, allocator);
+		object.AddMember("nextEvolutionCurrent", b->nextEvolutionCurrent, allocator);
+		object.AddMember("inited", b->inited, allocator);
+		object.AddMember("checked", b->checked, allocator);
+		doc.PushBack(object, allocator);
+	}
+	StringBuffer buffer;
+	Writer<StringBuffer> writer(buffer);
+	doc.Accept(writer);
+
+	s = buffer.GetString();
+}
+
+void MainScene::unarchivedDataWithVector(string &s, cocos2d::Vector<Bacterial *> *list)
+{
+	Document doc;
+	doc.Parse<0>(s.c_str());
+	if(doc.HasParseError())
+	{
+		log("GetParserError %s\n", doc.GetParseError());
+	}
+
+	if(doc.IsArray())
+	{
+		int count = doc.Size();
+		for(int i = 0; i<count; i++)
+		{
+			rapidjson::Value object(kObjectType);
+			object = doc[i];
+			if(object.HasMember("level") && object.HasMember("type") &&
+				object.HasMember("positionX") && object.HasMember("positionY"))
+			{
+				Bacterial *b = new Bacterial();
+				b->setType(object["type"].GetInt());
+				b->setLevel(object["level"].GetInt());
+				b->positionX = object["positionX"].GetInt();
+				b->positionY = object["positionY"].GetInt();
+				b->nextEvolution = object["nextEvolution"].GetDouble();
+				b->nextEvolutionCurrent = object["nextEvolutionCurrent"].GetDouble();
+				b->inited = object["inited"].GetBool();
+				b->checked = object["checked"].GetBool();
+				list->pushBack(b);
+			}
+		}
+	}
+}
+
 void MainScene::saveGame()
 {
+	UserDefault *userDefault = UserDefault::getInstance();
 
+	userDefault->setIntegerForKey("maxLevel", _maxLevel);
+	userDefault->setDoubleForKey("enemyGenerateTime", _enemyGenerateTime);
+	userDefault->setDoubleForKey("runningTime", _runningTime);
+
+	std::string bacterials;
+	archivedDataWithVector(bacterials, *_bacterialList);
+	log("%s", bacterials.c_str());
+	userDefault->setStringForKey("bacterials", bacterials);
+	userDefault->flush();
 }
 
 bool MainScene::loadGame()
 {
+	UserDefault *userDefault = UserDefault::getInstance();
+	if(userDefault->isXMLFileExist())
+	{
+		_maxLevel = userDefault->getIntegerForKey("maxLevel", 0);
+		_enemyGenerateTime = userDefault->getDoubleForKey("enemyGenerateTime", 0.f);
+		_runningTime = userDefault->getDoubleForKey("runningTime", 0.f);
+
+		std::string bacterials = userDefault->getStringForKey("bacterials", "[]");
+		unarchivedDataWithVector(bacterials, _bacterialList);
+
+		return true;
+	}
 	return false;
 }

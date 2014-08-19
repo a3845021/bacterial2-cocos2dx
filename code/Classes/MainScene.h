@@ -19,12 +19,16 @@ public:
     virtual bool init();  
     
 	virtual void onEnter();
+	virtual void onExit();
 
 	virtual bool onTouchBegan(cocos2d::Touch *touch, cocos2d::Event *event);
 	void onBtnMenuTouchEnded(Ref *ref, Widget::TouchEventType type);
     
     // implement the "static create()" method manually
     CREATE_FUNC(MainScene);
+
+	void setScore(int);
+	int getScore();
 
 	bool generateBacterial(int type);
 	bool generateBacterial(int type, int level);
@@ -34,11 +38,17 @@ public:
 	void saveGame();
 	bool loadGame();
 private:
+	int _maxLevel;
+	double _enemyGenerateTime;
+	double _runningTime;
+
 	std::vector<std::vector<CocosPtr<Bacterial> *> *> *_bacterialContainer;
 	Vector<Bacterial *> *_bacterialList;
 	Vector<Bacterial *> *_enemyList;
 	std::vector<std::vector<bool> *> *_enemyContainer;
 
+	void archivedDataWithVector(string &, Vector<Bacterial *>);
+	void unarchivedDataWithVector(string &, Vector<Bacterial *> *);
 	void prepareStage();
 	void putNewBacterial(int x, int y);
 };
