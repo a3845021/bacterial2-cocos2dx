@@ -10,7 +10,8 @@ public:
 	~CocosPtr()
 	{
 		if (ptr_) ptr_->release();
-	} 
+	}
+	T *getPtr() {return ptr_;}
 
 private:
 	T *ptr_;

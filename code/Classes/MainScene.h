@@ -14,6 +14,7 @@ class MainScene : public cocos2d::Layer
 public:
     // there's no 'id' in cpp, so we recommend returning the class instance pointer
     static cocos2d::Scene* createScene();
+	static MainScene* getInstance();
 
     // Here's a difference. Method 'init' in cocos2d-x returns bool, instead of returning 'id' in cocos2d-iphone
     virtual bool init();  
@@ -41,15 +42,19 @@ private:
 	int _maxLevel;
 	double _enemyGenerateTime;
 	double _runningTime;
+	Node *_container;
+	static MainScene *_instance;
 
 	std::vector<std::vector<CocosPtr<Bacterial> *> *> *_bacterialContainer;
 	Vector<Bacterial *> *_bacterialList;
 	Vector<Bacterial *> *_enemyList;
 	std::vector<std::vector<bool> *> *_enemyContainer;
 
+	void setMaxLevel(int);
 	void archivedDataWithVector(string &, Vector<Bacterial *>);
 	void unarchivedDataWithVector(string &, Vector<Bacterial *> *);
 	void prepareStage();
+	void prepareGraphics();
 	void putNewBacterial(int x, int y);
 };
 

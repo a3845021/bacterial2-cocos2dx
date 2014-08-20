@@ -1,25 +1,27 @@
 <?xml version="1.0"?>
 <UIProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <ProjectDir>Z:\Documents\cocos2dx\bacterial2-cocos2dx\builder\Bacterial2\CocosStudio\ccsprojs\MainUI</ProjectDir>
-  <Version>1.5.0.1</Version>
-  <Resources>Z:\Documents\cocos2dx\bacterial2-cocos2dx\builder\Bacterial2\CocosStudio\assets</Resources>
+  <ProjectDir>E:\cocos2dx\Bacterial2\builder\Bacterial2\CocosStudio\ccsprojs\MainUI</ProjectDir>
+  <Version>1.6.0.0</Version>
+  <Resources>E:\cocos2dx\Bacterial2\builder\Bacterial2\CocosStudio\assets</Resources>
   <Name>MainUI</Name>
   <JsonFileName>MainUI.json</JsonFileName>
-  <JsonFolder>Z:\Documents\cocos2dx\bacterial2-cocos2dx\builder\Bacterial2\CocosStudio\ccsprojs\MainUI\Json</JsonFolder>
+  <JsonFolder>E:\cocos2dx\Bacterial2\builder\Bacterial2\CocosStudio\ccsprojs\MainUI\Json</JsonFolder>
   <JsonList>
-    <string>MainUI_1.json</string>
+    <string>ControllerUI.json</string>
   </JsonList>
   <CanvasSize>
     <Width>640</Width>
     <Height>210</Height>
   </CanvasSize>
-  <filePath>Z:\Documents\cocos2dx\bacterial2-cocos2dx\builder\Bacterial2\CocosStudio\ccsprojs\MainUI\MainUI.xml.ui</filePath>
+  <filePath>E:\cocos2dx\Bacterial2\builder\Bacterial2\CocosStudio\ccsprojs\MainUI\MainUI.xml.ui</filePath>
   <ProjectType>UIProject</ProjectType>
   <ResRelativePath>\\..\\..\\assets</ResRelativePath>
   <imageFileList>
     <string>MainUI0.plist</string>
   </imageFileList>
-  <imagePngList />
+  <imagePngList>
+    <string>MainUI0.png</string>
+  </imagePngList>
   <JsonSuffix>.json</JsonSuffix>
-  <CurrentUIJson />
+  <CurrentUIJson>ControllerUI.json</CurrentUIJson>
 </UIProject>

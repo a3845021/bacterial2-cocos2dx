@@ -1,15 +1,18 @@
 #include "cocos2d.h"
-#include <string>
 
 using namespace std;
 
 #pragma once
 class Bacterial :
-	public cocos2d::Sprite
+	public cocos2d::Node
 {
 public:
 	Bacterial(void);
 	~Bacterial(void);
+
+	virtual bool init();
+
+	static Bacterial *create();
     
     void setLevel(int value);
     int getLevel();
@@ -19,6 +22,7 @@ public:
 //    int getPositionX();
 //    void setPositionY(int value);
 //    int getPositionY();
+	virtual void onEnter();
     
     int positionX;
     int positionY;
@@ -29,5 +33,6 @@ public:
 private:
 	int level;
     int type;
+	cocos2d::Sprite* bg;
 };
 

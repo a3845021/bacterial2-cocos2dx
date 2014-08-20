@@ -12,19 +12,30 @@ using namespace ui;
 using namespace cocostudio;
 using namespace rapidjson;
 
+MainScene* MainScene::_instance = nullptr;
+
 Scene* MainScene::createScene()
 {
     // 'scene' is an autorelease object
     auto scene = Scene::create();
     
     // 'layer' is an autorelease object
-    auto layer = MainScene::create();
+    auto layer = MainScene::getInstance();
 
     // add layer as a child to scene
     scene->addChild(layer);
 
     // return the scene
     return scene;
+}
+
+MainScene* MainScene::getInstance()
+{
+	if(!_instance)
+	{
+		_instance = MainScene::create();
+	}
+	return _instance;
 }
 
 // on "init" you need to initialize your instance
@@ -61,6 +72,7 @@ bool MainScene::init()
 	
 	auto pNode = SceneReader::getInstance()->createNodeWithSceneFile("publish/MainScene.json");
 	auto pUI = pNode->getChildByTag(10004);
+	_container = pNode->getChildByTag(10005);
 	auto pPanel = pUI->getChildByName("panel");
 	Button *pBtnMenu = (Button *)pPanel->getChildByName("btnMenu");
 	pBtnMenu->addTouchEventListener(Widget::ccWidgetTouchCallback(CC_CALLBACK_2(MainScene::onBtnMenuTouchEnded, this)));
@@ -78,6 +90,7 @@ bool MainScene::init()
 void MainScene::onEnter()
 {
 	Layer::onEnter();
+	prepareGraphics();
 	prepareStage();
 }
 
@@ -87,23 +100,30 @@ void MainScene::onExit()
 	saveGame();
 }
 
+void MainScene::prepareGraphics()
+{
+	SpriteFrameCache *cache = SpriteFrameCache::getInstance();
+	cache->addSpriteFramesWithFile("publish/BacterialUI0.plist");
+}
+
 void MainScene::prepareStage()
 {
 	int capacityX = 5;
 	int capacityY = 6;
 
-	_bacterialContainer = new std::vector<std::vector<CocosPtr<Bacterial> *> *>(capacityX);
-	_enemyContainer = new std::vector<std::vector<bool> *>(capacityX);
+	_bacterialContainer = new std::vector<std::vector<CocosPtr<Bacterial> *> *>();
+	_enemyContainer = new std::vector<std::vector<bool> *>();
 	_bacterialList = new Vector<Bacterial *>();
 	_enemyList = new Vector<Bacterial *>();
 
 	for(int i = 0; i < capacityX; i++)
 	{
-		auto tmp = new std::vector<CocosPtr<Bacterial> *>(capacityY);
-		auto tmp1 = new std::vector<bool>(capacityY);
+		auto tmp = new std::vector<CocosPtr<Bacterial> *>();
+		auto tmp1 = new std::vector<bool>();
 		for(int j = 0; j < capacityY; j++)
 		{
-			tmp->push_back(new CocosPtr<Bacterial>(new Bacterial()));
+			Bacterial *b = Bacterial::create();
+			tmp->push_back(new CocosPtr<Bacterial>(b));
 			tmp1->push_back(true);
 		}
 		_bacterialContainer->push_back(tmp);
@@ -127,6 +147,12 @@ void MainScene::prepareStage()
 			std::vector<CocosPtr<Bacterial> *>::iterator it = _bacterialContainer->at(b->positionX)->begin() + b->positionY;
 			_bacterialContainer->at(b->positionX)->erase(it);
 			_bacterialContainer->at(b->positionX)->insert(it, new CocosPtr<Bacterial>(b));
+
+			b->setPosition(b->positionX * BLOCK_SIZE + BLOCK_SIZE / 2, b->positionY * BLOCK_SIZE + BLOCK_SIZE / 2);
+			if(_container)
+			{
+				_container->addChild(b);
+			}
 		}
 	}
 }
@@ -137,7 +163,6 @@ void MainScene::onBtnMenuTouchEnded(Ref *ref, Widget::TouchEventType type)
 	{
 	case Widget::TouchEventType::ENDED:
 		log("%s", "btnMenu touched!");
-		saveGame();
 		break;
 	}
 }
@@ -146,8 +171,8 @@ bool MainScene::onTouchBegan(Touch *touch, Event *event)
 {
 	Vec2 p = touch->getLocation();
 	
-    int x = p.x / 60.5f;
-    int y = p.y / 60.5f;
+    int x = (p.x - 18) / BLOCK_SIZE;
+    int y = (p.y - 18) / BLOCK_SIZE;
 
 	if (x > 4 || y > 5 || x < 0 || y < 0)
     {
@@ -158,9 +183,20 @@ bool MainScene::onTouchBegan(Touch *touch, Event *event)
 	return true;
 }
 
+void MainScene::setMaxLevel(int value)
+{
+	if(value > _maxLevel)
+	{
+		_maxLevel = value;
+	}
+}
+
 void MainScene::putNewBacterial(int x, int y)
 {
+	if(generateBacterial(0, x, y))
+	{
 
+	}
 }
 
 bool MainScene::generateBacterial(int type)
@@ -189,7 +225,26 @@ bool MainScene::generateBacterial(int type, int x, int y, int level)
 	{
 		level = std::max(1, std::min(MAXLEVEL, level));
 		std::vector<CocosPtr<Bacterial> *> *tmp = _bacterialContainer->at(x);
-		
+		Bacterial *b = tmp->at(y)->getPtr();
+		if(!b->inited)
+		{
+			b->positionX = x;
+			b->positionY = y;
+			b->setAnchorPoint(ccp(.5f, .5f));
+			b->setType(type);
+			b->setLevel(level);
+			b->setPosition(x * BLOCK_SIZE + BLOCK_SIZE / 2, y * BLOCK_SIZE + BLOCK_SIZE / 2);
+			_container->addChild(b);
+			setMaxLevel(1);
+
+			_bacterialList->pushBack(b);
+			if(type == 1)
+			{
+				_enemyList->pushBack(b);
+			}
+
+			return true;
+		}
 	}
 	return false;
 }
@@ -239,7 +294,7 @@ void MainScene::unarchivedDataWithVector(string &s, cocos2d::Vector<Bacterial *>
 			if(object.HasMember("level") && object.HasMember("type") &&
 				object.HasMember("positionX") && object.HasMember("positionY"))
 			{
-				Bacterial *b = new Bacterial();
+				Bacterial *b = Bacterial::create();
 				b->setType(object["type"].GetInt());
 				b->setLevel(object["level"].GetInt());
 				b->positionX = object["positionX"].GetInt();

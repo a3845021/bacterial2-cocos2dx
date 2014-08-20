@@ -1,22 +1,22 @@
 <?xml version="1.0"?>
 <SceneProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <ProjectDir>Z:\Documents\cocos2dx\bacterial2-cocos2dx\builder\Bacterial2\CocosStudio\ccsprojs\MainScene</ProjectDir>
+  <ProjectDir>E:\cocos2dx\Bacterial2\builder\Bacterial2\CocosStudio\ccsprojs\MainScene</ProjectDir>
   <Version>1.6.0.0</Version>
-  <Resources>Z:\Documents\cocos2dx\bacterial2-cocos2dx\builder\Bacterial2</Resources>
+  <Resources>E:\cocos2dx\Bacterial2\builder\Bacterial2</Resources>
   <Name>MainScene</Name>
   <JsonFileName>MainScene.json</JsonFileName>
-  <JsonFolder>Z:\Documents\cocos2dx\bacterial2-cocos2dx\builder\Bacterial2\CocosStudio\assets\publish</JsonFolder>
+  <JsonFolder>E:\cocos2dx\Bacterial2\builder\Bacterial2\CocosStudio\assets\publish</JsonFolder>
   <JsonList />
   <CanvasSize>
     <Width>640</Width>
     <Height>960</Height>
   </CanvasSize>
-  <filePath>Z:\Documents\cocos2dx\bacterial2-cocos2dx\builder\Bacterial2\CocosStudio\ccsprojs\MainScene\MainScene.xml.scene</filePath>
+  <filePath>E:\cocos2dx\Bacterial2\builder\Bacterial2\CocosStudio\ccsprojs\MainScene\MainScene.xml.scene</filePath>
   <ProjectType>SceneProject</ProjectType>
   <ResRelativePath>\\..\\..\\assets</ResRelativePath>
   <JSFileList />
   <DefaultUI_JSList />
   <ExternalSimulatorPath>D:\Program Files (x86)\Cocos Studio\Simulator.exe</ExternalSimulatorPath>
   <ExternalCommand>-FLUSHTYPE 1 -XMLPATH E:\cocos2dx\Bacterial2\builder\Bacterial2\CocosStudio\ccsprojs\MainScene\MainScene.xml.scene -DLLPATH F:\Documents\CocosStudio\Plugins\1.5\CustomWidget.dll|</ExternalCommand>
-  <Res>Z:\Documents\cocos2dx\bacterial2-cocos2dx\builder\Bacterial2\CocosStudio\assets</Res>
+  <Res>E:\cocos2dx\Bacterial2\builder\Bacterial2\CocosStudio\assets</Res>
 </SceneProject>

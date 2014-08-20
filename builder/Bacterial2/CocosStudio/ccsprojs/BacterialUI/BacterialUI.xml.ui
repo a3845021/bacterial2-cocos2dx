@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<UIProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProjectDir>E:\cocos2dx\Bacterial2\builder\Bacterial2\CocosStudio\ccsprojs\BacterialUI</ProjectDir>
+  <Version>1.6.0.0</Version>
+  <Resources>E:\cocos2dx\Bacterial2\builder\Bacterial2\CocosStudio\assets</Resources>
+  <Name>BacterialUI</Name>
+  <JsonFileName>BacterialUI.json</JsonFileName>
+  <JsonFolder>E:\cocos2dx\Bacterial2\builder\Bacterial2\CocosStudio\ccsprojs\BacterialUI\Json</JsonFolder>
+  <JsonList>
+    <string>BacterialUI.json</string>
+  </JsonList>
+  <CanvasSize>
+    <Width>480</Width>
+    <Height>320</Height>
+  </CanvasSize>
+  <filePath>E:\cocos2dx\Bacterial2\builder\Bacterial2\CocosStudio\ccsprojs\BacterialUI\BacterialUI.xml.ui</filePath>
+  <ProjectType>UIProject</ProjectType>
+  <ResRelativePath>\\..\\..\\assets</ResRelativePath>
+  <imageFileList>
+    <string>BacterialUI0.plist</string>
+  </imageFileList>
+  <imagePngList>
+    <string>BacterialUI0.png</string>
+  </imagePngList>
+  <JsonSuffix>.json</JsonSuffix>
+  <CurrentUIJson>BacterialUI.json</CurrentUIJson>
+</UIProject>
