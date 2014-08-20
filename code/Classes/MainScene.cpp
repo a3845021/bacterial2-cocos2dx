@@ -174,6 +174,7 @@ bool MainScene::onTouchBegan(Touch *touch, Event *event)
     int x = (p.x - 18) / BLOCK_SIZE;
     int y = (p.y - 18) / BLOCK_SIZE;
 
+    log("Touched, x=%i, y=%i", x, y);
 	if (x > 4 || y > 5 || x < 0 || y < 0)
     {
         return false;

@@ -6,8 +6,8 @@
 #define ENEMY_EVOLUTION_MAX_TIME 60.f
 #define BECTERIAL_MESSAGE @"Becterial.BecterialTouched"
 
-#if (CC_TARGET_PLATFORM == CC_PLATFORM_WIN32)
+//#if (CC_TARGET_PLATFORM == CC_PLATFORM_WIN32)
 #define BLOCK_SIZE 121.f
-#else
-#define BLOCK_SIZE 60.5f
-#endif
+//#else
+//#define BLOCK_SIZE 60.5f
+//#endif
