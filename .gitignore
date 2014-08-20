@@ -25,3 +25,8 @@
 /code/cocos2d/cocos/audio/proj.win32/Debug.win32
 /code/cocos2d/external/chipmunk/proj.win32/Debug.win32
 /code/proj.android/obj
+/code/proj.android
+/code/proj.win32
+/code/proj.ios_mac
+/code/proj.wp8-xaml
+/code/proj.linux
