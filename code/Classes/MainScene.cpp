@@ -6,6 +6,9 @@
 #include "ui/CocosGUI.h"
 #include "ui/UIWidget.h"
 #include "define.h"
+#include "DataStorageManager.h"
+
+#define dataStorageManager DataStorageManager::getInstance()
 
 USING_NS_CC;
 using namespace ui;
@@ -196,7 +199,8 @@ void MainScene::putNewBacterial(int x, int y)
 {
 	if(generateBacterial(0, x, y))
 	{
-
+		dataStorageManager->score += BACTERIAL_BASIC_SCORE;
+		checkResult();
 	}
 }
 
@@ -248,6 +252,45 @@ bool MainScene::generateBacterial(int type, int x, int y, int level)
 		}
 	}
 	return false;
+}
+
+void MainScene::checkResult()
+{
+	Bacterial *enemy;
+	Bacterial *b;
+	std::vector<CocosPtr<Bacterial> *> *tmp;
+
+	for(int i = 0; i<_enemyContainer->size(); ++i)
+	{
+		std::vector<bool> *tmp = (*_enemyContainer)[i];
+		for(int j = 0; j < tmp->size(); ++j)
+		{
+			(*tmp)[j] = true;
+		}
+	}
+
+	for(auto e : *_enemyList)
+	{
+		e->checked = false;
+	}
+	
+	for(auto e : *_enemyList)
+	{
+        //ÅÐ¶ÏÍÌÊÉ;
+        int startX = std::min(std::max(e->positionX - 1, 0), 4);
+        int endX = std::min(std::max(e->positionX + 1, 0), 4);
+        int startY = std::min(std::max(e->positionY - 1, 0), 5);
+        int endY = std::min(std::max(e->positionY + 1, 0), 5);
+
+		for(int m = startX; m <= endX; m++)
+		{
+			tmp = _bacterialContainer->at(m);
+			for(int n = startY; n <= endY; n++)
+			{
+
+			}
+		}
+	}
 }
 
 void MainScene::archivedDataWithVector(string &s, cocos2d::Vector<Bacterial *> list)
@@ -323,6 +366,8 @@ void MainScene::saveGame()
 	log("%s", bacterials.c_str());
 	userDefault->setStringForKey("bacterials", bacterials);
 	userDefault->flush();
+
+	dataStorageManager->saveData();
 }
 
 bool MainScene::loadGame()

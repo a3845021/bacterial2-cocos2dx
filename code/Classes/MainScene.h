@@ -28,6 +28,8 @@ public:
     // implement the "static create()" method manually
     CREATE_FUNC(MainScene);
 
+	void checkResult();
+
 	void setScore(int);
 	int getScore();
 
